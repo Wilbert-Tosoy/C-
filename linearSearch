@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void linearSearch() {
+    int array[20];
+    int size, number;
+
+    printf("Gaano kahaba ang nais na array: ");
+    scanf("%d", &size);
+
+    printf("Ilagay ang nais na %d na halaga ng bawat isa.\n", size);
+
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &array[i]);
+    }
+
+    printf("Ilagay ang halaga na nais hanapin: ");
+    scanf("%d", &number);
+
+    for (int i = 0; i < size; i++) {
+        if (number == array[i]) {
+            printf("Ang iyong hinahanap ay nasa pang-%d na lalagyan.", i + 1);
+            break;
+        } else {
+            printf("Wala rito ang hinahanap mo.");
+            break;
+        }
+    }
+
+}
+
+int main(void) {
+    linearSearch();
+
+    return 0;
+}
