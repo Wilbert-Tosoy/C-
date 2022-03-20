@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <math.h>
+
+#define PI 3.142857
+
+// Will get the radius
+double getRadius(){
+    double radius;
+    printf("Enter the radius: ");
+    scanf("%lf", &radius);
+    return radius;
+}
+
+// Will do the Perimeter
+void perimeterFunction(double radius) {
+    double perimeter = (2*PI*radius);
+    printf("The perimeter is approximately %.2lf\n", perimeter);
+}
+
+// Will do the Area
+void areaFunction(double radius) {
+    double area = PI * pow(radius, 2);
+    printf("The area is approximately %.2lf\n", area);
+}
+
+int main(void) {
+    double radius = getRadius();
+    perimeterFunction(radius);
+    areaFunction(radius);
+
+    return 0;
+}
