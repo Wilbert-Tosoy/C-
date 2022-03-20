@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void daysConverter(){
+    int numberOfDays, years, weeks, days;
+
+
+    printf("Enter the number of days: ");
+    scanf("%d", &numberOfDays);
+
+    years = numberOfDays / 365;
+    weeks = (numberOfDays % 365) / 7;
+    days = numberOfDays - ((years * 365) + (weeks * 7));
+
+    printf("Years: %d\n", years);
+    printf("Weeks: %d\n", weeks);
+    printf("Days: %d\n", days);
+
+}
+
+int main(void) {
+    daysConverter();
+
+    return 0;
+}
