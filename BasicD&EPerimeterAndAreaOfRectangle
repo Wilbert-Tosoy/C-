@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void rectangle() {
+    int length, width, perimeter, area;
+
+    printf("Enter the length: ");
+    scanf("%d", &length);
+    printf("Enter the width: ");
+    scanf("%d", &width);
+
+    perimeter = 2 * (length + width);
+    area = length * width;
+    printf("The perimeter is %d\n", perimeter);
+    printf("The area is %d", area);
+    
+}
+
+
+int main (void) {
+    rectangle();
+
+    return 0;
+}
