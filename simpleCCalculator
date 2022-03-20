@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+void simpleCalculator() {
+    double x, y;
+    char z;
+    printf("Enter the first input: ");
+    scanf("%lf", &x);
+    printf("Enter the second input: ");
+    scanf("%lf", &y);
+
+    printf("Enter the Operation\nA - Addition\nB - Subtraction\nC - Multiplication\nD - Division\n");
+    printf("Pick: ");
+    scanf(" %c", &z);
+
+    if (z == 'A' || z == 'a') {
+        printf("Result: %.2lf", x + y);
+    } else if (z == 'B' || z == 'b') {
+        printf("Result: %.2lf", x - y);
+    } else if (z == 'C' || z == 'c') {
+        printf("Result: %.2lf", x * y);
+    } else if (z == 'D' || z == 'd') {
+        printf("Result: %.2lf", x / y);
+    } else {
+        printf("Are you an idiot?");
+    }
+}
+
+int main(void) {
+    simpleCalculator();
+
+    return 0;
+}
