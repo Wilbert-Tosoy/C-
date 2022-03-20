@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void reverseChar() {
+    char x, y, z;
+
+    printf("Enter the 3 characters: \n");
+    scanf("%c %c %c", &x, &y, &z);
+
+    printf("The Reverse of %c%c%c is %c%c%c", x,y,z,z,y,x);
+    
+}
+
+
+int main (void) {
+    reverseChar();
+
+    return 0;
+}
