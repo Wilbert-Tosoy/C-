@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+void bhaskaraFormula() {
+    float a, b, c, firstRoot, secondRoot;
+
+    printf("Enter the first value: ");
+    scanf("%f", &a);
+    printf("Enter the second value: ");
+    scanf("%f", &b);
+    printf("Enter the third value: ");
+    scanf("%f", &c);
+
+    firstRoot = (b * -1) + sqrt(pow(b, 2) - (4 * a * c));
+    firstRoot /= 2 * a;
+    secondRoot = (b * -1) - sqrt(pow(b, 2) - (4 * a * c));
+    secondRoot /= 2 * a;
+    printf("%f\n", firstRoot);
+    printf("%f", secondRoot);
+
+}
+
+int main(void) {
+    bhaskaraFormula();
+    return 0;
+}
