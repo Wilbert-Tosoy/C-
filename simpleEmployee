@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+void simpleEmployee(){
+    char id[5];
+    int workingHours, salaryPerHour, totalSalary;
+
+    printf("Enter the Employee's ID: ");
+    scanf(" %s", id);
+
+    printf("Enter the number of working hour/s: ");
+    scanf("%d", &workingHours);
+
+    printf("Enter the employee's salary per hour: ");
+    scanf("%d", &salaryPerHour);
+
+    printf("Employee's ID: ");
+    printf("%s", id);
+    printf("\n");
+
+    totalSalary = salaryPerHour * workingHours;
+    printf("Salary: $%d", totalSalary);
+
+}
+
+int main(void) {
+    simpleEmployee();
+
+    return 0;
+}
