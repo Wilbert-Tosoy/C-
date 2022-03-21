@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+void BDandE19() {
+    int p, q, r, s;
+
+    do {
+        printf("Enter a even number: ");
+        scanf("%d", &p);
+    } while (p % 2 != 0);
+
+    for (int i = 0; i < 3; i++) {
+        if (i == 0) {
+            printf("Enter the second input: ");
+            scanf("%d", &q);
+        }
+        if (i == 1) {
+            printf("Enter the third input: ");
+            scanf("%d", &r);
+        }
+        if (i == 2) {
+            printf("Enter the fourth input: ");
+            scanf("%d", &s);
+        }
+    }
+    printf("%d %d %d %d\n", p, q, r, s);
+
+    int sum1 = r + s;
+    int sum2 = p + q;
+
+    if ((q > r && s > p) && (sum1 > sum2)) {
+        printf("Correct Values");
+    } else {
+        printf("Wrong Values");
+    }
+ }
+
+int main(void) {
+    BDandE19();
+
+    return 0;
+}
