@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+void distanceCalculator() {
+    float x[2], y[2], distance;
+
+    for (int i = 0; i < 2; i++) {
+        int j = i + 1;
+        printf("Coordinates of point %d (x%d, y%d): \n", j, j, j);
+        scanf("%f%f", &x[i], &y[i]);
+        if (i == 1) {
+            distance = sqrt(pow(x[i-1] - x[i], 2) + pow(y[i-1] - y[i], 2));
+            printf("Distance between two points: %.4f", distance);
+        }
+    }
+
+}
+
+int main() {
+    distanceCalculator();
+
+    return 0;
+}
