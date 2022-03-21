@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+void gasConsumption() {
+    int distance;
+    float fuel, consumption;
+
+    printf("Enter the total distance in km: ");
+    scanf("%d", &distance);
+
+    printf("Enter the total fuel spent in liters: ");
+    scanf("%f", &fuel);
+
+    consumption =  distance / fuel;
+    printf("The average consumption (km/lt): %.2f", consumption);
+
+}
+
+int main(void) {
+    gasConsumption();
+
+    return 0;
+}
