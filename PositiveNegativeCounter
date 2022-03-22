@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+void positiveNegativeCounter() {
+    int x, y, values[5];
+    int sumOfPositive = 0, sumOfNegative = 0;
+
+    for (int i = 0; i < 5; i++) {
+        printf("Enter the value of the index number %d: ", i + 1);
+        scanf("%d", &values[i]);
+        if (values[i] == 0) {
+            continue;
+        }
+        if (values[i] < 0){
+            sumOfNegative++;
+        }
+        if (values[i] > 0) {
+            sumOfPositive++;
+        }
+    }
+    printf("Number of Positive Numbers: %d\n", sumOfPositive);
+    printf("Number of Negative Numbers: %d\n", sumOfNegative);
+}
+
+int main(void) {
+    positiveNegativeCounter();
+    return 0;
+}
