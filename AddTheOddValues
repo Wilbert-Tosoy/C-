@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+void sumOfOddValues() {
+    int sum = 0, size, values[10];
+
+    printf("How many values are we adding up? ");
+    scanf("%d", &size);
+    for (int i = 0; i < size; i++) {
+        printf("Enter the value of index %d: ", i + 1);
+        scanf("%d", &values[i]);
+        if (values[i] % 2 == 0) {
+            continue;
+        } else {
+            sum += values[i];
+        }
+    }
+    printf("%d", sum);
+
+}
+
+int main(void) {
+    sumOfOddValues();
+
+    return 0;
+}
