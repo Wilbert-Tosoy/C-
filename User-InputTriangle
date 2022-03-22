@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+void userinputTriangle() {
+    int a, b, c;
+
+    printf("Enter the value of A: ");
+    scanf("%d", &a);
+    printf("Enter the value of B: ");
+    scanf("%d", &b);
+    printf("Enter the value of C: ");
+    scanf("%d", &c);
+
+    int perimeter = a + b + c;
+    if (a + b > c) {
+        printf("%d", perimeter);
+    } else if (a + c > b) {
+        printf("%d", perimeter);
+    } else if (b + c > a) {
+        printf("%d", perimeter);
+    } else {
+        printf("Not Possible");
+    }
+}
+
+int main (void) {
+    userinputTriangle();
+    return 0;
+}
