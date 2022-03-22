@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void BDandE31() {
+    int x;
+    printf("Enter a number: ");
+    scanf("%d", &x);
+    if (x < 0 && x % 2 == 0) {
+        printf("Negative Even");
+    } else if (x < 0 && x % 2 != 0) {
+        printf("Negative Odd");
+    } else if (x > 0 && x % 2 == 0) {
+        printf("Positive Even");
+    } else {
+        printf("Positive Odd");
+    }
+}
+
+int main(void) {
+    BDandE31();
+    return 0;
+}
