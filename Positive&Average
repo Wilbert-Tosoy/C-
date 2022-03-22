@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+void positiveAverage() {
+    int values[10];
+    int size, counter = 0, sum = 0;
+    
+    printf("Enter how many number: ");
+    scanf("%d", &size);
+    for (int i = 0; i < size; i++) {
+        printf("Enter the value of index number %d: ", i + 1);
+        scanf("%d", &values[i]);
+        if (values[i] > 0) {
+            sum += values[i];
+            counter++;
+        } else {
+            continue;
+        }
+    }
+    float average = (float)sum / (float)counter;
+    printf("Number of Positive Numbers: %d\n", counter);
+    printf("Average Value: %.2f", average);
+}
+
+int main(void) {
+    positiveAverage();
+    return 0;
+}
