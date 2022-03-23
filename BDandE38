@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+void BDandE38() {
+    float x, y, qoutient;
+    printf("Enter the dividend: ");
+    scanf("%f", &x);
+    printf("Enter the divisor: ");
+    scanf("%f", &y);
+
+    (y != 0) ? qoutient = x / y, printf("%.2f", qoutient) : printf("Division not possible");
+}
+
+int main(void) {
+    BDandE38();
+    return 0;
+}
