@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void BDandE41() {
+    int x; 
+    printf("Enter a number: ");
+    scanf("%d", &x);
+    for (int i = 1; i <= x * 3; i++) {
+        printf("%d ", i);
+        if (i % 3 == 0) {
+            printf("\n");
+        }
+    }
+}
+
+int main(void) {
+    BDandE41();
+    return 0;
+}
