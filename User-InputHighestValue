@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+void userinputHighestValue() {
+    int x = 0;
+    int y = 0;
+    int values[10];
+    int size;
+    printf("Enter the size of the array(5-10): ");
+    scanf("%d", &size);
+    for (int i = 0; i < size; i++) {
+        printf("Enter the value of number %d: ", i + 1);
+        scanf("%d", &values[i]);
+        if (x < values[i]) {
+            x = values[i];
+            y = i + 1;
+        }
+    }
+    printf("Highest Value: %d\n", x);
+    printf("Position: %d", y);
+}
+
+int main(void) {
+    userinputHighestValue();
+    return 0;
+}
