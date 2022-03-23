@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void notDivisibleBy17() {
+    int x, y;
+    int sum = 0;
+    printf("Enter the first number: ");
+    scanf("%d", &x);
+    printf("Enter the second number: ");
+    scanf("%d", &y);
+    for (int i = x; i <= y; i++) {
+        if (i % 17 == 0) {
+            continue;
+        } else {
+            sum += i;
+        }
+    }
+    printf("Sum: %d", sum);
+}
+
+int main(void) {
+    notDivisibleBy17();
+    return 0;
+}
