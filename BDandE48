@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void BDandE48() {
+    int input[7];
+    for (int i = 0; i < 7; i++) {
+        printf("Enter the value of index %d: ", i+1);
+        scanf("%d", &input[i]);
+        if (input[i] == 0) {
+            input[i] = 100;
+        }
+    }
+    for (int i = 0; i < 7; i++) {
+        if (input[i] == 100) {
+            continue;
+        }
+        printf("n[%d] = %d\n", i, input[i]);
+    }
+
+}
+
+int main(void) {
+    BDandE48();
+    return 0;
+}
