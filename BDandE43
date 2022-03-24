@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void BDandE43() {
+    int x, y;
+    printf("Enter the first number: ");
+    scanf("%d", &x);
+    printf("Enter the second number: ");
+    scanf("%d", &y);
+    for (int i = 1; i <= x * y; i++) {
+        printf("%d ", i);
+        if (i % y == 0) {
+            printf("\n");
+        }
+    }
+}
+
+int main (void) {
+    BDandE43();
+    return 0;
+}
