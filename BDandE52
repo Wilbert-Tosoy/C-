@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+void BDandE52() {
+    int array[5];
+    for (int i = 0; i < 5; i++) {
+        printf("Enter the value of array[%d]: ", i);
+        scanf("%d", &array[i]);
+    }
+    int low = array[0];
+    for (int j = 0; j < 5; j++) {
+        if (low > array[j]) {
+            low = array[j];
+            printf("Smallest Value: %d\n", low);
+            printf("Position of the element: %d", j);
+        }
+    }
+}
+
+int main(void) {
+    BDandE52();
+    return 0;
+}
