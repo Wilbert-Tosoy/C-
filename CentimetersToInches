@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+#define toInches 0.393700
+
+void centimeterToInches() {
+    float x;
+    float result;
+    printf("Enter the Length: ");
+    scanf("%f", &x);
+    result = x * toInches;
+    printf("Inches: %.2f", result);
+}
+
+int main(void) {
+    centimeterToInches();
+    return 0;
+}
