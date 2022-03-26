@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+void differenceOfMaximumAndMinimum() {
+    int size;
+    float difference, maximum, minimum;
+    printf("Enter how many values: ");
+    scanf("%d", &size);
+    float values[size];
+    for (int i = 0; i < size; i++) {
+        printf("Enter the value of number %d: ", i + 1);
+        scanf("%f", &values[i]);
+    }
+    maximum = values[0];
+    minimum = values[0];
+    for (int j = 0; j < size; j++) {
+        if (values[j] > maximum) {
+            maximum = values[j];
+        }
+        if (values[j] < minimum) {
+            minimum = values[j];
+        }
+    }
+    printf("%f - %f\n", maximum, minimum);
+    difference = maximum - minimum;
+    printf("Difference is %f", difference);
+}
+
+int main(void) {
+    differenceOfMaximumAndMinimum();
+    return 0;
+}
